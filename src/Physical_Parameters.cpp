@@ -52,7 +52,7 @@
 	const double rSun=6.957E8*meter;
 	const double rhoSun=151*gram*pow(cm,-3);
 	//Dark Matter Halo Parameters
-	const double v0=220*km/sec;
+	const double v0=238*km/sec;
 	const double vesc=544*km/sec;
 	
 	const double Nesc=M_PI*v0*v0*(sqrt(M_PI)*v0*erf(vesc/v0)-2*vesc*exp(-vesc*vesc/v0/v0));
@@ -258,7 +258,7 @@
 //Earth's Velocity in the galactic frame
 	Eigen::Vector3d EarthVelocity(double n){
 		//1. Sun's rotation around galactic center:
-		Eigen::Vector3d vGal(0,220*km/sec,0);
+		Eigen::Vector3d vGal(0,238*km/sec,0);
 		//2. Sun's peculiar motion:
 		Eigen::Vector3d vPec(11.1*km/sec,12.2*km/sec,7.3*km/sec);
 		//3. Earth's rotation around galactic center:
